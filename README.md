@@ -3,6 +3,13 @@
 Some [helpers](https://handlebarsjs.com/guide/#custom-helpers) for the [Handlebars template engine](https://handlebarsjs.com/guide/).
 
 
+## Installation
+
+```
+npm i @yamato-daiwa/handlebars-extensions -E
+```
+
+
 ## Usage 
 
 Each helper function of this package has been wrapped by the object.
@@ -52,6 +59,17 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
 {{/areStringsEqual}}
 ```
 
+### `IsEmptyArrayHandlebarsHelper` / `isEmptyArray`
+
+```handlebars
+{{#isEmptyArray items}}
+
+  <p>Out of stock</p>
+    
+{{/isEmptyArray}}
+```
+
+
 ### `IsEmptyObjectHandlebarsHelper` / `isEmptyObject`
 
 ```handlebars
@@ -61,6 +79,29 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
     
 {{/isEmptyObject}}
 ```
+
+
+### `IsGreaterThanHandlebarsHelper` / `isGreaterThan`
+
+```handlebars
+{{#ifGreaterThan x 0}}
+  <!-- Content to display if x > 0 -->
+{{else}}
+  <!-- Content to display if x <= 0 -->
+{{/ifGreaterThan}}
+```
+
+
+### `IsNonEmptyArrayHandlebarsHelper` / `isNonEmptyArray`
+
+```handlebars
+{{#ifGreaterThan x 0}}
+  <!-- Content to display if x < 0 -->
+{{else}}
+  <!-- Content to display if x >= 0 -->
+{{/ifGreaterThan}}
+```
+
 
 ### `IsNonEmptyObjectHandlebarsHelper` / `isNonEmptyObject`
 
@@ -114,4 +155,14 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
   {{/isNonEmptyObject}}
     
 </dl>
+```
+
+### `IsSmallerThanHandlebarsHelper` / `isSmallerThan`
+
+```handlebars
+{{#isSmallerThan x 0}}
+  <!-- Content to display if x < 0 -->
+{{else}}
+  <!-- Content to display if x >= 0 -->
+{{/isSmallerThan}}
 ```

@@ -5,7 +5,11 @@
  */
 
 
-export { default as AreStringsEqualHandlebarsHelper } from "./Strings/AreStringsEqualHandlebarsHelper";
-export { default as IsEmptyObjectHandlebarsHelper } from "./Strings/IsEmptyObjectHandlebarsHelper";
-export { default as IsNonEmptyObjectHandlebarsHelper } from "./Strings/IsNonEmptyObjectHandlebarsHelper";
-export { default as SwitchCaseHandlebarsHelpers } from "./Strings/SwitchCaseHandlebarsHelpers";
+export { AreStringsEqualHandlebarsHelper } from "./Strings/AreStringsEqualHandlebarsHelper";
+export { IsEmptyArrayHandlebarsHelper } from "./Strings/IsEmptyArrayHandlebarsHelper";
+export { IsEmptyObjectHandlebarsHelper } from "./Strings/IsEmptyObjectHandlebarsHelper";
+export { IsGreaterThanHandlebarsHelper } from "./Strings/IsGreaterThanHandlebarsHelper";
+export { IsNonEmptyArrayHandlebarsHelper } from "./Strings/IsNonEmptyArrayHandlebarsHelper";
+export { IsNonEmptyObjectHandlebarsHelper } from "./Strings/IsNonEmptyObjectHandlebarsHelper";
+export { IsSmallerThanHandlebarsHelper } from "./Strings/IsSmallerThanHandlebarsHelper";
+export { SwitchCaseHandlebarsHelpers } from "./Strings/SwitchCaseHandlebarsHelpers";

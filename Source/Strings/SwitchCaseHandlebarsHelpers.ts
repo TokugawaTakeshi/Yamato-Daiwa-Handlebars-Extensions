@@ -1,7 +1,7 @@
 import type * as Handlebars from "handlebars";
 
 
-const SwitchCaseHandlebarsHelpers: Readonly<{
+export const SwitchCaseHandlebarsHelpers: Readonly<{
   switch: (value: string, helperOptions: Handlebars.HelperOptions) => string;
   case: (value: string, helperOptions: Handlebars.HelperOptions) => string | null;
 }> = {
@@ -25,6 +25,3 @@ const SwitchCaseHandlebarsHelpers: Readonly<{
 
   }
 };
-
-
-export default SwitchCaseHandlebarsHelpers;

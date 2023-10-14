@@ -2,7 +2,7 @@ import type * as Handlebars from "handlebars";
 import type { ArbitraryObject } from "@yamato-daiwa/es-extensions";
 
 
-const IsEmptyObjectHandlebarsHelper: Readonly<{
+export const IsEmptyObjectHandlebarsHelper: Readonly<{
   isEmptyObject: (templateContext: ArbitraryObject, helperOptions: Handlebars.HelperOptions) => string;
 }> = {
   isEmptyObject(templateContext: ArbitraryObject, helperOptions: Handlebars.HelperOptions): string {
@@ -10,6 +10,3 @@ const IsEmptyObjectHandlebarsHelper: Readonly<{
         helperOptions.fn(this) : helperOptions.inverse(this);
   }
 };
-
-
-export default IsEmptyObjectHandlebarsHelper;

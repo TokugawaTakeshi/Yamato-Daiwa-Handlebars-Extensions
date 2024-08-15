@@ -15,7 +15,7 @@ export const IsGreaterThanHandlebarsHelper: Readonly<{
           messageSpecificPart: `The operands must be the number while first one is ${ typeof oneValue }.`
         }),
         title: InvalidParameterValueError.localization.defaultTitle,
-        occurrenceLocation: "isGreaterThan"
+        occurrenceLocation: "isGreaterThan(oneValue, anotherValue)"
       });
     }
 
@@ -28,7 +28,7 @@ export const IsGreaterThanHandlebarsHelper: Readonly<{
           messageSpecificPart: `The operands must be the number while the second one is ${ typeof anotherValue }.`
         }),
         title: InvalidParameterValueError.localization.defaultTitle,
-        occurrenceLocation: "isGreaterThan"
+        occurrenceLocation: "isGreaterThan(oneValue, anotherValue)"
       });
     }
 

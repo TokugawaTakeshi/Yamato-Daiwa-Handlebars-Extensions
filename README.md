@@ -49,17 +49,8 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
 
 
 ## Functionality
-### `AreStringsEqualHandlebarsHelper` / `areStringsEqual`
-
-```handlebars
-{{#areStringsEqual familyName givenName}}
-
-  <p>The family name is even with given name?!</p>
-    
-{{/areStringsEqual}}
-```
-
-### `IsEmptyArrayHandlebarsHelper` / `isEmptyArray`
+### Arrays
+#### `IsEmptyArrayHandlebarsHelper` / `isEmptyArray`
 
 ```handlebars
 {{#isEmptyArray items}}
@@ -69,30 +60,7 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
 {{/isEmptyArray}}
 ```
 
-
-### `IsEmptyObjectHandlebarsHelper` / `isEmptyObject`
-
-```handlebars
-{{#isEmptyObject socialNetworkProfilesURIs}}
-
-  <p>No social networks profiles registered</p>
-    
-{{/isEmptyObject}}
-```
-
-
-### `IsGreaterThanHandlebarsHelper` / `isGreaterThan`
-
-```handlebars
-{{#ifGreaterThan x 0}}
-  <!-- Content to display if x > 0 -->
-{{else}}
-  <!-- Content to display if x <= 0 -->
-{{/ifGreaterThan}}
-```
-
-
-### `IsNonEmptyArrayHandlebarsHelper` / `isNonEmptyArray`
+#### `IsNonEmptyArrayHandlebarsHelper` / `isNonEmptyArray`
 
 ```handlebars
 {{#ifGreaterThan x 0}}
@@ -103,8 +71,39 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
 ```
 
 
-### `IsNonEmptyObjectHandlebarsHelper` / `isNonEmptyObject`
+### Numbers
+#### `IsGreaterThanHandlebarsHelper` / `isGreaterThan`
 
+```handlebars
+{{#ifGreaterThan x 0}}
+  <!-- Content to display if x > 0 -->
+{{else}}
+  <!-- Content to display if x <= 0 -->
+{{/ifGreaterThan}}
+```
+
+#### `IsSmallerThanHandlebarsHelper` / `isSmallerThan`
+
+```handlebars
+{{#isSmallerThan x 0}}
+  <!-- Content to display if x < 0 -->
+{{else}}
+  <!-- Content to display if x >= 0 -->
+{{/isSmallerThan}}
+```
+
+### Objects
+#### `IsEmptyObjectHandlebarsHelper` / `isEmptyObject`
+
+```handlebars
+{{#isEmptyObject socialNetworkProfilesURIs}}
+
+  <p>No social networks profiles registered</p>
+    
+{{/isEmptyObject}}
+```
+
+#### `IsNonEmptyObjectHandlebarsHelper` / `isNonEmptyObject`
 
 ```handlebars
 <dl>
@@ -157,12 +156,20 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
 </dl>
 ```
 
-### `IsSmallerThanHandlebarsHelper` / `isSmallerThan`
+#### `ToJSON_HandlebarsHelper` / `toJSON`
 
 ```handlebars
-{{#isSmallerThan x 0}}
-  <!-- Content to display if x < 0 -->
-{{else}}
-  <!-- Content to display if x >= 0 -->
-{{/isSmallerThan}}
+<div data-user="{{{ toJSON user }}}"></div>
+```
+
+
+### Other
+#### `AreStringsEqualHandlebarsHelper` / `areStringsEqual`
+
+```handlebars
+{{#areStringsEqual familyName givenName}}
+
+  <p>The family name is even with given name?!</p>
+    
+{{/areStringsEqual}}
 ```

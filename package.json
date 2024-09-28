@@ -1,6 +1,6 @@
 {
   "name": "@yamato-daiwa/handlebars-extensions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Helpers for the Handlebars template engine.",
   "keywords": [
     "handlebars",

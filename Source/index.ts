@@ -1,13 +1,15 @@
 /*!
- * @yamato-daiwa/handlebars-extensions v0.0
- * (c) 2021 Sole proprietorship "Yamato Daiwa" Takeshi Tokugawa
+ * @yamato-daiwa/handlebars-extensions v0.3
+ * (c) 2023 Yamato Daiwa Co., Ltd.
  * Released under the MIT License.
  */
-
 
 /* ━━━ Arrays ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 export { IsEmptyArrayHandlebarsHelper } from "./Arrays/IsEmptyArrayHandlebarsHelper";
 export { IsNonEmptyArrayHandlebarsHelper } from "./Arrays/IsNonEmptyArrayHandlebarsHelper";
+
+/* ━━━ Nullables ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+export { SubstituteNullHandlebarsHelper } from "./Nullables/SubstituteNullHandlebarsHelper";
 
 /* ━━━ Numbers ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 export { IsGreaterThanHandlebarsHelper } from "./Numbers/IsGreaterThanHandlebarsHelper";

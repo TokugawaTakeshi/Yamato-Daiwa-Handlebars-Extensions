@@ -10,8 +10,10 @@ export { IsNonEmptyArrayHandlebarsHelper } from "./Arrays/IsNonEmptyArrayHandleb
 
 /* ━━━ Nullables ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 export { SubstituteNullHandlebarsHelper } from "./Nullables/SubstituteNullHandlebarsHelper";
+export { SubstituteUndefinedHandlebarsHelper } from "./Nullables/SubstituteUndefinedHandlebarsHelper";
 
 /* ━━━ Numbers ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+export { IncrementBy1HandlebarsHelper } from "./Numbers/IncrementBy1HandlebarsHelper";
 export { IsGreaterThanHandlebarsHelper } from "./Numbers/IsGreaterThanHandlebarsHelper";
 export { IsSmallerThanHandlebarsHelper } from "./Numbers/IsSmallerThanHandlebarsHelper";
 

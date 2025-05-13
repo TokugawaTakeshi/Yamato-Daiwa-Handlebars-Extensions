@@ -71,7 +71,48 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
 ```
 
 
+### Nullables
+#### `SubstituteNullHandlebarsHelper` / "substituteNull"
+
+```handlebars
+<div>{{ substituteNull nullable "Unknown"}}</div>
+```
+
+
+#### `SubstituteUndefinedHandlebarsHelper` / "substituteWhenUndefined"
+
+```handlebars
+<div>{{ substituteUndefined undefindable "Unknown"}}</div>
+```
+
+
 ### Numbers
+#### `IncrementBy1HandlebarsHelper` / `incrementBy1`
+
+```handlebars
+
+<table>
+    
+  <thead>
+    <tr>
+        <th>No.</th>
+        <th>Full Name</th>
+    </tr>
+  </thead>
+    
+  <tbody>
+    <tr>
+      {{#each people}}
+        <td>{{incrementBy1 @index}}</td>
+        <td>{{this}}</td>
+      {{/each}}
+    </tr>
+  </tbody>
+    
+</table>
+```
+
+
 #### `IsGreaterThanHandlebarsHelper` / `isGreaterThan`
 
 ```handlebars

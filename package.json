@@ -1,6 +1,6 @@
 {
   "name": "@yamato-daiwa/handlebars-extensions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Helpers for the Handlebars template engine.",
   "keywords": [
     "handlebars",
@@ -26,6 +26,10 @@
   "files": [
     "Distributable"
   ],
+  "dependencies": {
+    "@yamato-daiwa/es-extensions": "1.6.9",
+    "handlebars": "4.7.8"
+  },
   "devDependencies": {
     "@yamato-daiwa/style_guides": "0.0.56",
     "rimraf": "5.0.1",
@@ -35,12 +39,7 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "Rebuild distributable": "rimraf Distributable & tsc -p tsconfig-cjs.json && tsc -p tsconfig-esm.json",
-    "Lint": "eslint Source",
-    "Rebuild distributable and realize alpha": "npm run \"Rebuild distributable\" && npm publish --tag alpha",
-  },
-  "dependencies": {
-    "@yamato-daiwa/es-extensions": "1.6.9",
-    "handlebars": "4.7.8"
+    "Rebuild Distributable": "rimraf Distributable & tsc -p tsconfig-cjs.json && tsc -p tsconfig-esm.json",
+    "Lint": "eslint Source"
   }
 }

@@ -71,6 +71,22 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
 ```
 
 
+### Conditionals
+#### `SwitchCaseHandlebarsHelpers` / `switch` / `case`
+
+```handlebars
+{{#switch dayOfWeekNumber__numerationFrom0AsSunday}}
+    {{#case 0}}Sunday{{/case}}
+    {{#case 1}}Monday{{/case}}
+    {{#case 2}}Tuesday{{/case}}
+    {{#case 3}}Wednesday{{/case}}
+    {{#case 4}}Thursday{{/case}}
+    {{#case 5}}Friday{{/case}}
+    {{#case 6}}Saturday{{/case}}
+{{/switch}}
+```
+
+
 ### Nullables
 #### `SubstituteNullHandlebarsHelper` / "substituteNull"
 
@@ -123,6 +139,7 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
 {{/ifGreaterThan}}
 ```
 
+
 #### `IsSmallerThanHandlebarsHelper` / `isSmallerThan`
 
 ```handlebars
@@ -132,6 +149,7 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
   <!-- Content to display if x >= 0 -->
 {{/isSmallerThan}}
 ```
+
 
 ### Objects
 #### `IsEmptyObjectHandlebarsHelper` / `isEmptyObject`
@@ -204,7 +222,7 @@ it is unclear outside the Handlebars files that `areStringsEquals` is the helper
 ```
 
 
-### Other
+### Strings
 #### `AreStringsEqualHandlebarsHelper` / `areStringsEqual`
 
 ```handlebars

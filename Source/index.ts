@@ -8,6 +8,9 @@
 export { IsEmptyArrayHandlebarsHelper } from "./Arrays/IsEmptyArrayHandlebarsHelper";
 export { IsNonEmptyArrayHandlebarsHelper } from "./Arrays/IsNonEmptyArrayHandlebarsHelper";
 
+/* ━━━ Conditionals ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+export { SwitchCaseHandlebarsHelpers } from "././Conditionals/SwitchCaseHandlebarsHelpers";
+
 /* ━━━ Nullables ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 export { SubstituteNullHandlebarsHelper } from "./Nullables/SubstituteNullHandlebarsHelper";
 export { SubstituteUndefinedHandlebarsHelper } from "./Nullables/SubstituteUndefinedHandlebarsHelper";
@@ -24,6 +27,3 @@ export { ToJSON_HandlebarsHelper } from "./Objects/ToJSON_HandlebarsHelper";
 
 /* ━━━ Strings ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 export { AreStringsEqualHandlebarsHelper } from "./Strings/AreStringsEqualHandlebarsHelper";
-
-/* ━━━ Other ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-export { SwitchCaseHandlebarsHelpers } from "./Other/SwitchCaseHandlebarsHelpers";
